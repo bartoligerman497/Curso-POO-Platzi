@@ -12,5 +12,16 @@ class Main {
         /*Car car2 = new Car("QWE567", new Account("Andrea Herrera", "ANDA876"));
         car2.passegenger = 3;
         car2.printDataCar();*/
+
+        // Créditos Roxana Isadora
+        System.out.println("Inicializando....");
+        System.out.println("Car....");
+        Car car = new Car(
+            new Driver(
+                "jorge", 
+                "41859402", 
+                "jorge@gmail.com", 
+                "1"), 
+            8);
     }
 }

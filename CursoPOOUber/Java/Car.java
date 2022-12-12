@@ -1,17 +1,17 @@
 class Car {
     private Integer id;
     private String license;
-    private Account driver;
-    private Integer passegenger;
+    private Driver driver;
+    private Integer passenger;
 
-    public Car(String license, Account driver){
-        this.license = license;
+    public Car(Driver driver, Integer passenger ){
+        this.id = 0;
         this.driver = driver;
-        
+        this.passenger = passenger;
     }
 
     void printDataCar() {
-        if(passegenger != null){
+        if(passenger != null){
             System.out.println("License: " + license + " Name Driver: " + driver.name + " Passengers: " + passegenger);
         }
         
@@ -19,12 +19,12 @@ class Car {
 
 
     public Integer getPassenger(){
-        return passegenger;
+        return passenger;
     }
 
     public void setPassenger(Integer passenger) {
         if(passenger == 4){
-            this.passegenger = passenger;
+            this.passenger = passenger;
         }else{
             System.out.println("Necesitas asignar 4 pasajeros");
         }
@@ -68,7 +68,7 @@ class Car {
     /**
      * @param driver the driver to set
      */
-    public void setDriver(Account driver) {
+    public void setDriver(Driver driver) {
         this.driver = driver;
     }
 
